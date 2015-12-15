@@ -1,0 +1,11 @@
+<%= form_for @user do |f| %>
+	<%= f.label :first_name %>
+	<%= f.text_field :first_name %>
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %>
+	<br />
+	<%= f.label :age %>
+	<%= f.select :age, (1..150) %>
+	<br />
+	<%= f.submit %>
+<% end %>

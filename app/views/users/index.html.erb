@@ -1,0 +1,8 @@
+<h1>User(s)</h1>
+<% @users.each do |user| %>
+	<h2><%= user.first_name %></h2>
+	<h2><%= user.last_name %></h2>
+	<h3><%= user.age %></h3>
+	<%= link_to 'User Profile', user_path(user) %>
+	<% end %>
+	<h3><%= button_to 'New User', new_user_path, method: :get  %></h3>

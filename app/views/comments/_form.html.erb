@@ -1,0 +1,10 @@
+<%= form_for @comment do |f| %>
+	<%= f.label :opinion %>
+	<%= f.text_area :opinion, placeholder: "Type your comment here ..." %>
+
+	<%= f.hidden_field :post_id, value: params[:post_id] %>
+	<%= f.hidden_field :user_id, value: params[:user_id] %>
+	<br />
+	<%= f.submit %>
+
+<% end %>

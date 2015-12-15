@@ -1,0 +1,7 @@
+<h1><%= @user.first_name %></h1>
+<h1><%= @user.last_name %></h1>
+
+<h3>Age: <%= @user.age %></h3>
+<br />
+<%= link_to 'Edit Profile', edit_user_path(@user) %>
+<%= link_to 'Delete Profile', user_path(@user), method: :delete, data: { confirm: "Do you really want to delete this profile?"} %>
